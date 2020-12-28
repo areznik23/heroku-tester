@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/hello', (req, res) => {
-	res.send(JSON.stringify({ hello: "hello" }))
+	res.json({ hello: "hello" })
 })
 
 app.listen(process.env.PORT || 3000, () => {
